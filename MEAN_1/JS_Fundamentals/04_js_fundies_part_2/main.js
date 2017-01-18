@@ -11,7 +11,7 @@ function sumAll(x,y){
 // 2
 function minVal(myArray) {
   if (Array.isArray(myArray)) {
-    for (i = 0; i < myArray.length; i++) {
+    for (var i = 0; i < myArray.length; i++) {
       var temp = myArray[i-1];
       if (myArray[i] < temp) {
         var final = myArray[i];
@@ -53,7 +53,7 @@ var getSum = function(x, y) {
 console.log(getSum(1,10));
 
 var getMin = function(arr) {
-  for (i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; i++) {
     var temp = arr[i-1];
     if (arr[i] < temp) {
       var final = arr[i];

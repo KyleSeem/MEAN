@@ -1,6 +1,6 @@
 var x = [3,5,"Dojo", "rocks", "Michael", "Sensei"];
 function logThis(x) {
-  for(i = 0; i < x.length; i++){
+  for(var i = 0; i < x.length; i++){
     console.log(x[i]);
   };
 };
@@ -17,14 +17,14 @@ console.log('------');
 
 
 var y = 0;
-for (i = 0; i <= 500; i++){
+for (var i = 0; i <= 500; i++){
   y = y + i;
 };
 console.log(y);
 console.log('------');
 
 var myArray = [1, 5, 90, 25, -3, 0];
-for (i = 0; i < myArray.length; i++){
+for (var i = 0; i < myArray.length; i++){
   var temp = myArray[i-1];
   if (myArray[i] < temp){
     var final = myArray[i];
