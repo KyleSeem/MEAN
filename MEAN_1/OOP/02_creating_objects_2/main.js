@@ -33,3 +33,20 @@ var car = new VehicleConstructor('Car', 4, 2, 35);
 car.noise = 'Beep';
 car.move();
 car.checkMiles();
+
+var bike = VehicleConstructor('Bike', 2, 1);
+bike.makeNoise('ring');
+
+var sedan = VehicleConstructor('Sedan', 4, 5);
+sedan.makeNoise('Honk');
+
+var bus = VehicleConstructor('Bus', 4, 6);
+
+bus.pickUp = function(addPassengers){
+  console.log("Passenger count:", bus.passengers);
+  console.log("Now boarding:", addPassengers, "new passengers.");
+  bus.passengers += addPassengers;
+  console.log("New passenger count:", bus.passengers);
+  return bus;
+}
+bus.pickUp(4);
